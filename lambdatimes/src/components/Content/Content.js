@@ -5,7 +5,6 @@ import React, {
 import Tabs from './Tabs';
 import Cards from './Cards';
 
-// Importing our tab and card data. No need to change anything here.
 import {
   tabData,
   cardData
@@ -26,7 +25,6 @@ export default class Content extends Component {
       tabs: tabData,
       cards: cardData
     })
-    // Once the component has mounted, get the data and reflect that data on the state.
   }
 
   changeSelected = tab => {
@@ -60,6 +58,12 @@ export default class Content extends Component {
       } <
       Tabs tabs = {
         this.state.tabs
+      }
+      selectedTab = {
+        this.state.selected
+      }
+      selectTabHandler = {
+        this.changeSelected()
       }
       /> <
       Cards cards = {

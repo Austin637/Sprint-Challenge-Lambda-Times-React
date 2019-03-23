@@ -10,7 +10,7 @@ const Tabs = props => {
         <
         span className = "title" > TRENDING TOPICS: < /span> {
           props.tabs.map(tab => < Tab selectTabHandler = {
-              props.changeSelected
+              props.selectTabHandler
             }
             selectedTab = {
               props.selectedTab

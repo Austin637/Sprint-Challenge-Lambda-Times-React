@@ -1,6 +1,6 @@
 # Sprint Challenge: Lambda Times (React)
 
-This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored Intermediate React, React Tooling, The React Life-cycle, React Composition Patterns and CSS-in-JS. In this Sprint Challenge, you will demonstrate proficiency by creating an application that uses to build a fully-functioning replicate of the LA-Times website.
+This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored Intermediate React, React Tooling, The React Life-cycle, React Composition Patterns and CSS-in-JS. In this Sprint Challenge, you will demonstrate proficiency by creating an application that uses to build a fully-functioning replicate of the LA-Times website..
 
 Remember, this is a way for you to analyze your understanding of the concepts presented this week. Feel free to reference old code, but please refrain from copy/pasting, even rewriting old code can teach you something new! Take your time, and have fun!
 
@@ -29,9 +29,27 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+      A React.js application is created by lots of components. These components get many specific attributes. These attributes are called ”props” in React and can be of any type. It can be a string, function or an Array, as long as its valid javascript you can use it as a prop. It gives flexibility but can cause problems.
+      For example, if I’m using a component written by another developer I have to figure out what props that component want, what’s required, and also the correct type. React has a solution for this and its called propTypes. PropTypes defines type and which props are required. This benefits the future you and other developers using your component in two ways:
+
+1. You can easily open up a component and check which props are required and what type they should be.
+2. When things get messed up, React will give you an error message in the console, saying which props is wrong/missing plus the render method that caused the problem.
+
 - [ ] Describe a life-cycle event in React?
+      You can think of React lifecycle methods as the series of events that happen from the birth of a React component to its death. Every component in React goes through a lifecycle of events.
+      Mounting – Birth of your component
+      Update – Growth of your component
+      Unmount – Death of your component
+
 - [ ] Explain the details of a Higher Order Component?
+      A higher-order component is a function that takes a component and returns a new component. Whereas a component transforms props into UI, a higher-order component transforms a component into another component.
+      HOCs are common in third-party React libraries.
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+1. Inline CSS. React lets you add CSS inline, written as attributes and passed to elements.
+2. Styled Components. Styled-components are created by defining components using the ES6 template literal notation. CSS properties can be added to the component just like you would do using CSS. When the JS is parsed, styled-components will generate unique class names, and inject the CSS into the DOM.
+3. CSS Modules. A CSS Module is a CSS file in which all class names and animation names are scoped locally, by default.
 
 ## Project Setup
 
